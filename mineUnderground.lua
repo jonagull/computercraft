@@ -1,4 +1,5 @@
 turtle.refuel()
+turtle.select(2)
 
 for i = 1, 10 do
     if turtle.detectDown()
@@ -7,7 +8,6 @@ for i = 1, 10 do
 
     turtle.down()
 end
-
 
 -- mine forward 30
 -- turn around 180
@@ -23,6 +23,10 @@ for i = 1, 10 do
         turtle.forward()
         if turtle.detectDown()
         then turtle.digDown()
+        end
+
+        if y % 5 then
+            turtle.placeDown('torch')
         end
     end
 
@@ -40,10 +44,5 @@ for i = 1, 10 do
         turnDirection = 'left'
     end
 end
-
--- EvAp4Pyp
-
--- pastebin get ruvcWMpQ mineUnderground
-
 
 
