@@ -14,7 +14,7 @@ turtle.placeDown('torch')
 print("Strip mining length:", length)
 print("Tunnel spacing:", width)
 
--- pastebin get MtNQVzvy mine
+-- pastebin get vdJh3JtK mine
 
 function mineOverUnder()
     turtle.digUp()
@@ -44,8 +44,9 @@ for i = 1, width do
             turtle.digUp()
         end
 
+        -- mine 50 500 left
         -- place torch, at certain row and column, also check it is a torch we have
-        if y % 5 == 0 and i % 3 == 1 then
+        if y % 8 == 0 and i % 8 == 1 then
             local itemDetail = turtle.getItemDetail(2)
             if itemDetail.name == "minecraft:torch" then
                 turtle.select(2)
