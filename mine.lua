@@ -1,4 +1,5 @@
 --hahahaha
+-- seed: 69420070680859076
 local args = { ... }
 local length = tonumber(args[1])
 local width = tonumber(args[2])
